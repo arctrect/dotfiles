@@ -1,3 +1,8 @@
+" *****************************************************************************
+" Create a symbolic link to this file in the repository in the home
+" directory
+" *****************************************************************************
+
 " vim-plug
 call plug#begin()
 " The default plugin directory will be as follows:
