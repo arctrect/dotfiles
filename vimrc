@@ -7,7 +7,8 @@ call plug#begin()
 "   - Avoid using standard Vim directory names like 'plugin'
 " Make sure you use single quotes
 
-"vim-go"
+" vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
+" vim-markdown
+Plug 'gabrielelana/vim-markdown'
 call plug#end()
