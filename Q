@@ -1,0 +1,3 @@
+#!/bin/bash
+
+lynx -lss="$HOME/.lynx.lss" "https://duckduckgo.com/?q=$*"
