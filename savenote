@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "$HOME/.goznote" || exit
+git add .
+git commit -m "updated notes"
+git push origin master

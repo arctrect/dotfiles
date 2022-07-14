@@ -27,10 +27,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# All configs below are my own configuration -----------------------------------
+
 # make the users $HOME/bin directory
 mkdir -p "$HOME/bin"
-
-# All configs below are my own configuration -----------------------------------
 
 # set vi input mode
 set -o vi
@@ -42,9 +42,13 @@ export LYNX_CFG=$HOME/.lynx.cfg
 export PATH=$"HOME/repos/gitlab.com/scripts:$HOME/app:$HOME/bin:$PATH"
 export FONTCONFIG_PATH=/etc/fonts
 
-# create soft link to configuration files
+# create symbolic links to configuration files
 ln -sf "$HOME/dotfiles/my_tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$HOME/dotfiles/lynx.cfg" "$HOME/.lynx.cfg"
 ln -sf "$HOME/dotfiles/lynx.lss" "$HOME/.lynx.lss"
 ln -sf "$HOME/dotfiles/my_vimrc" "$HOME/.vimrc"
 
+# create symbolic links to Q and watchdate
+ln -sf "$HOME/dotfiles/Q" "$HOME/bin/Q"
+ln -sf "$HOME/dotfiles/watchdate" "$HOME/bin/watchdate"
+ln -sf "$HOME/dotfiles/savenote" "$HOME/bin/savenote"
