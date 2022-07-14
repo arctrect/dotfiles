@@ -47,8 +47,5 @@ ln -sf "$HOME/dotfiles/my_tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$HOME/dotfiles/lynx.cfg" "$HOME/.lynx.cfg"
 ln -sf "$HOME/dotfiles/lynx.lss" "$HOME/.lynx.lss"
 ln -sf "$HOME/dotfiles/my_vimrc" "$HOME/.vimrc"
-
-# create symbolic links to Q and watchdate
 ln -sf "$HOME/dotfiles/Q" "$HOME/bin/Q"
-ln -sf "$HOME/dotfiles/watchdate" "$HOME/bin/watchdate"
-ln -sf "$HOME/dotfiles/savenote" "$HOME/bin/savenote"
+ln -sf "$HOME/dotfiles/watchdate" "$HOME/bin/wd"
