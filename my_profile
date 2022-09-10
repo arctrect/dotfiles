@@ -33,6 +33,12 @@ fi
 mkdir -p "$HOME/bin"
 mkdir -p "$HOME/.goznote"
 
+# check if git is installed
+if [ "$(command -v git)" ]
+then
+    echo "git found"
+fi
+
 # set vi input mode
 set -o vi
 
@@ -44,6 +50,7 @@ export PATH=$"HOME/repos/gitlab.com/scripts:$HOME/app:$HOME/bin:$PATH"
 export FONTCONFIG_PATH=/etc/fonts
 
 # create symbolic links to configuration files
+ln -sf "$HOME/dotfiles/my_profile" "$HOME/.profile"
 ln -sf "$HOME/dotfiles/my_tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$HOME/dotfiles/lynx.cfg" "$HOME/.lynx.cfg"
 ln -sf "$HOME/dotfiles/lynx.lss" "$HOME/.lynx.lss"
