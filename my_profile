@@ -33,12 +33,6 @@ fi
 mkdir -p "$HOME/bin"
 mkdir -p "$HOME/.goznote"
 
-# check if git is installed
-if [ "$(command -v git)" ]
-then
-    echo "git found"
-fi
-
 # set vi input mode
 set -o vi
 
