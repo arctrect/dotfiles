@@ -1,4 +1,4 @@
-e!/bin/bash
+#!/bin/bash
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -31,6 +31,7 @@ fi
 
 # make the users $HOME/bin directory
 mkdir -p "$HOME/bin"
+mkdir -p "$HOME/.goznote"
 
 # set vi input mode
 set -o vi
@@ -50,3 +51,5 @@ ln -sf "$HOME/dotfiles/my_vimrc" "$HOME/.vimrc"
 ln -sf "$HOME/dotfiles/Q" "$HOME/bin/Q"
 ln -sf "$HOME/dotfiles/watchdate" "$HOME/bin/wd"
 ln -sf "$HOME/dotfiles/getnote" "$HOME/bin/getnote"
+ln -sf "$HOME/dotfiles/savenote" "$HOME/bin/savenote"
+
